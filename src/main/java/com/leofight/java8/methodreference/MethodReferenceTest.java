@@ -60,7 +60,6 @@ public class MethodReferenceTest {
 
         /*students.sort((studentParam1,studentParam2) -> studentComparator.compareStudentByName(studentParam1,studentParam2));
         students.forEach(student -> System.out.println(student.getName()));
-
         System.out.println("-------");*/
 
        /* students.sort(studentComparator::compareStudentByName);
