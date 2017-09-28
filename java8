@@ -1,0 +1,75 @@
+a.execute(callback(event){
+    event......
+}
+
+
+Lambad表达式基本结构：
+
+（param1,param2,param3) -> {body}
+
+关于函数式接口：
+
+1. 如果一个接口只有一个抽象方法，那么该接口就是一个函数式接口。
+2. 如果我们在某个接口上声明了FuntionalInterface注解，那么编译器就会按照函数式接口的定义来要求该接口。
+3. 如果某个接口只有一个抽象方法，但我们并没有给该接口声明FunctionalInterface注解，那么编译器依旧会将该接口看作是函数式接口。
+
+Stream...xxx.yyy.zzz
+
+Pipeline
+
+(type1 arg1,type2 arg2) -> {body}
+
+(arg1,arg2) -> {body}
+
+arg1 -> {body}
+
+s -> System.out.println(s)
+
+高阶函数：如果一个函数接收一个函数作为参数，或者返回一个函数作为返回值，那么该函数就叫做高阶函数。
+
+
+Optional
+
+NPE NullPointerException
+
+if(null != person){
+    Address address = person.getAddresss();
+    if(null != address){
+        ....
+    }
+}
+
+
+
+流由3部分构成：
+
+1.源
+2.零个或多个中间操作。
+3.终止操作。
+
+流操作的分类：
+
+1.惰性求值。
+2.及早求职。
+
+
+
+集合关注的时数据与数据存储本身；
+流关注的则是对数据的计算。
+
+流与迭代器类似的一点是：流是无法重复使用或者消费的。
+
+
+collect:收集器
+collector作为collect方法的参数。
+collector是一个接口，
+
+
+函数式编程最大的特点：表示做什么，而不是如何做。
+
+
+对于Collectors静态工厂类来说，其实现一共分为两种情况：
+1.通过CollectorImpl实现
+2.通过reducing方法来实现：reducing方法本身又是通过CollectorImpl实现的。
+
+
